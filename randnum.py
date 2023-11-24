@@ -3,12 +3,15 @@ import random
 
 # Extra Features: Try...Except code when y < 5
 
-y = int(input("Numbers Possible: "))
-if y >= 5:
-    randInt = random.randint(0, y)
-else:
-    exit()
+while True:
+    y = int(input("Numbers Possible: "))
+    if y >= 5:
+        randInt = random.randint(0, y)
+        break
+    else:
+        print("Amount of Numbers should at least be 5.")
         
+          
 
 def guess_x():
         hearts = round(y/5)
